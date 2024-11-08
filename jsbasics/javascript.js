@@ -1,13 +1,7 @@
+const person = {fname:"John", lname:"Doe", age:25}; 
 
-let x = "0";
-switch (x) {
-  case 0:
-    text = "Off";
-    break;
-  case 1:
-    text = "On";
-    break;
-  default:
-    text = "No value found";
+let txt = "";
+for (let x in person) {
+  txt += person[x] + " ";
 }
-console.log(text)
+console.log(txt)
