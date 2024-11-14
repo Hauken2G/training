@@ -12,7 +12,7 @@
 
 */
 
-// code to be deleted
+// code to be deleted\d
 const birthYear = 1947;
 
 const thisYear = 1965;
