@@ -3,7 +3,7 @@ function getComputerChoice() {
   if (i < 0.33) {
     return "rock";
   } else if (i < 0.66) {
-    return "paper";
+    return " paper";
   } else {
       return "scissors";
   }
@@ -14,7 +14,7 @@ function getHumanChoice () {
   let option = prompt("Enter choice (rock, paper, or scissors):").toLowerCase(); 
   if (option !== "rock" && option !== "paper" && option !== "scissors") {
      alert ("You can only choose rock/paper/scissors")
-     return null;
+     return;
   } else {
  return option;
 }
@@ -41,8 +41,21 @@ return `You win! ${humanChoice} beats ${computerChoice}. Score: ${humanScore} vs
 }
 console.log(playRound());
 
-function playGame(playRound, humanScore, computerScore) {
-  for (let i = 1; i <= 5; i++) 
-    { 
+const result = playRound();
+
+function playGame() {
+  playRound();
+  playRound();
+  playRound();
+  playRound();
+  playRound();
+
+  if (humanScore > computerScore) {
+    console.log("Congratulations! You won the game!");
+  } else if (humanScore < computerScore) {
+    console.log("The computer wins the game. Better luck next time!");
+  } else {
+    console.log("It's a tie!");
+  }
 }
-}
+  
