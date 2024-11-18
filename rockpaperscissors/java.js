@@ -7,8 +7,8 @@ function getComputerChoice() {
   } else {
     return 'scissors';
   }
-  
 }
+
 function getHumanChoice() {
   let option = ' ';
   option = prompt('Enter choice (rock, paper, or scissors):');
@@ -42,6 +42,7 @@ function playRound(humanChoice, computerChoice) {
 }
 
 function playGame() {
+  
   playRound();
   playRound();
   playRound();
