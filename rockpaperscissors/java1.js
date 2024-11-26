@@ -60,19 +60,6 @@ function checkGameOver() {
   let paper = document.querySelector('#paper');
   let scissors = document.querySelector('#scissors');
  
-  rock.addEventListener('click',(event) => {
-      console.log('Rock was clicked');
-  });
-
-  paper.addEventListener('click',(event) => {
-      console.log('Paper was clicked');
-  });
-
-  scissors.addEventListener('click',(event) => {
-      console.log('Scissors was clicked');
-  });
-  // -- //
-
   // Event listeners for buttons
 rock.addEventListener('click', () => {
     const result = playRound('rock');
